@@ -31,6 +31,9 @@ export class HomescreenComponent {
     let url = backend_api.base_dashboard
     this.service.dashboardget(`${url}`).then(res=>{
     this.noti.showSuccess('Welcome','Enjoy the Anime')
+    }).catch(e=>{
+      this.noti.showError('Session Expired','Try again')
+      this.router.navigate(['login'])
     })
   }
 
