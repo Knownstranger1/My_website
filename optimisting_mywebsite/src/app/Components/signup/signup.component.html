@@ -1,0 +1,41 @@
+<body>
+    <div class="big_container">
+        <div class="box">
+            <div class="box_logo">
+                <img src="../../../assets/pic/yo.png" alt="">
+            </div>
+            <div class="box_input">
+                <form action="" [formGroup]="form" method="post" (ngSubmit)="data()">
+                    <div class="inputs">
+                        <div class="formGroup">
+                            <label class="name">name</label>
+                            <input type="text" formControlName="name" name="name">
+                            <app-error [field]="form.get('name')" error="required" message="Name is required"></app-error>
+                        </div>
+                        <div class="formGroup">
+                            <label class="email">email</label>
+                             <input type="email" formControlName="email" name="email" id="">
+                             <app-error [field]="form.get('email')" error="required" message="Email is required"></app-error>
+                             <app-error [field]="form.get('email')" error="email" message="Email is invalid"></app-error>
+                        </div>
+                        <div class="formGroup">
+                            <label class="password">password</label>
+                            <input type="password" formControlName="password" name="password">
+                            <app-error [field]="form.get('password')" error="required" message="Password is required"></app-error>
+                            <app-error [field]="form.get('password')" error="min" message="Password must be minimum 8 Character"></app-error>
+                            <app-error [field]="form.get('password')" error="max" message="Password must be maximum 20 Character"></app-error>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <div class="submit">
+                            <button type="submit" [disabled]="valid()" class="login_btn">Signup</button>
+                        </div>
+                        <div class="link">
+                            <a href="login" class="signup_btn">Login</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

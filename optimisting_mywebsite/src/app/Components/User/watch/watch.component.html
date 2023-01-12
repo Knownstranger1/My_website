@@ -1,0 +1,57 @@
+<app-toolbar></app-toolbar>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="ep_fixer">
+
+    
+    <div class="fixer">
+        <div class="card_container">
+            <mat-card>
+                <img [src]="animedata.animeImg" alt="">
+            </mat-card>
+        </div>
+        <div class="anime_data">
+            <div class="anime_name">
+                <p>Anime Name:&nbsp;{{animedata.animeTitle}}</p>
+            </div>
+            <div class="anime_Synopsis">
+                <p>Anime Synopsis:&nbsp;{{animedata.synopsis}}</p>
+            </div>
+            <div class="anime_genre">
+                <p>Genre:</p>
+                <p *ngFor="let item of animedata.genres">{{item}}</p>
+            </div>
+            <div class="anime_other_name">
+                <p>Other Name:&nbsp;{{animedata.otherNames}}</p>
+            </div>
+            <div class="total_episode">
+                <p>Total Episode:&nbsp;{{animedata.totalEpisodes}}</p>
+            </div>
+            <div class="release_date">
+                <p>Release Date:&nbsp;{{animedata.releasedDate}}</p>
+            </div>
+            <div class="status">
+                <p>Status:&nbsp;{{animedata.status}}</p>
+            </div>
+            <div class="type">
+                <p>Type:{{animedata.type}}</p>
+            </div>
+        </div>
+    </div>
+ 
+  <div class="ep_positioner">
+    <div class="header">
+        <h1>Episode List</h1>
+    </div>
+    <div class="episode_box">
+        <div class="episode_box" *ngFor="let item of animedata.episodesList | paginate:{ itemsPerPage: 50,currentPage:p}">
+            <p (click)="stream(item.episodeId)"><a href=""></a>{{item.episodeNum}}</p>
+        </div>
+       </div>
+       <pagination-controls  [responsive]="true"
+       previousLabel="Previous"
+       nextLabel="Next" (pageChange)="p=$event"></pagination-controls>
+    </div>
+</div>
+</body>

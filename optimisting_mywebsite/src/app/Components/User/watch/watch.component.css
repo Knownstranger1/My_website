@@ -1,0 +1,107 @@
+mat-card.mat-mdc-card.mdc-card img {
+    width: fit-content;
+}
+
+.fixer {
+    position: relative;
+    left: 9%;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 19px;
+    background: aliceblue;
+    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 77%;
+    background: rgb(58, 7, 108);
+    background: linear-gradient(90deg, rgba(58, 7, 108, 0.8907272381608894) 0%, rgba(24, 169, 190, 0.6946488067883403) 29%, rgba(134, 118, 215, 0.557393904827556) 52%, rgba(99, 214, 157, 0.2800829804578081) 77%, rgba(255, 255, 255, 0) 100%);
+    animation: menu 5s infinite alternate ease;
+    background-size: 200%;
+}
+
+@keyframes menu {
+    0% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
+
+#particles-js {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+mat-card.mat-mdc-card.mdc-card img {
+    width: 42vh;
+}
+
+.anime_data div {
+    height: fit-content;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.anime_data {
+    display: grid;
+    gap: 11px;
+    grid-auto-rows: max-content;
+}
+
+.anime_genre {
+    display: flex;
+    gap: 10px;
+}
+
+.ep_fixer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 80px;
+}
+.episode_box {
+    width: fit-content;
+display: flex;
+flex-direction: row-reverse;
+flex-wrap: wrap;
+align-content: flex-start;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 20px;
+position: relative;
+}
+
+.episode_box.ng-star-inserted p {
+    font-weight: 600;
+    font-size: larger;
+    color: rgb(85, 198, 153);
+    font-style: italic;
+    cursor: pointer;
+}
+
+.ep_positioner {
+position: relative;
+top: 2em;
+display: flex;
+left: 11em;
+width: 76%;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items: flex-start;
+align-content: center;
+background: #3a62a280;
+border-radius: 13px;
+}
+ h1 {
+	letter-spacing: normal;
+	margin: 0 0 16px;
+	color: aquamarine;
+	font-size: 4vh;
+    opacity: 0.7;
+	font-weight: 900;
+}
