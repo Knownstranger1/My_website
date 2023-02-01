@@ -7,7 +7,7 @@ const routes: Routes = [
    redirectTo:'/signup',
    pathMatch:'full'
   },
-  {
+  {  
     path: 'signup',
     loadChildren: () => import('./Components/signup/signup.module').then(m => m.SignupModule)
   },
