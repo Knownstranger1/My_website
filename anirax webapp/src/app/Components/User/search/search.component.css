@@ -1,0 +1,173 @@
+.card_fixer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    gap: 50px;
+    height: fit-content;
+}
+
+.card_fixer img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+mat-card.mat-mdc-card.mdc-card.ng-star-inserted {
+    border-radius: 3px;
+    height: 22em;
+    width: 13em;
+}
+
+.Anime_name p {
+    font-size: 12px;
+    color: #3f51b5;
+    overflow: hidden;
+    width: fit-content;
+    font-weight: 200;
+    font-family: cursive;
+    cursor: pointer;
+}
+
+.mat-mdc-card-content:last-child {
+    height: fit-content;
+    width: fit-content;
+}
+
+
+
+.mat-toolbar-multiple-rows {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(17, 15, 15);
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.mat-toolbar-row.mat-toolbar-row:nth-child(1) {
+    max-width: 50px;
+    width: 100%;
+}
+
+.mat-toolbar-row.mat-toolbar-row:nth-child(3) {
+    gap: 20px;
+    justify-content: center;
+}
+
+button.mat-mdc-menu-trigger {
+    display: contents;
+    color: #8ea5d5;
+    cursor: pointer;
+}
+
+.mat-mdc-menu-item.mdc-list-item img {
+    height: 20px;
+}
+
+.mat-mdc-menu-item.mdc-list-item span {
+    position: relative;
+    top: -1px;
+    padding-left: 3px;
+}
+
+form.ng-tns-c92-1.ng-untouched.ng-pristine.ng-valid {
+    position: relative;
+    top: -6px;
+}
+
+mat-toolbar.mat-toolbar {
+    display: flex;
+    background: #110f0f;
+}
+
+
+.mat-toolbar-row.mat-toolbar-row:nth-child(4) {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    white-space: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.searchbar_cointainer {
+    z-index: 1;
+}
+
+.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
+    color: #3dd3e4;
+}
+
+.searchbar_cointainer form.search_input.ng-untouched.ng-pristine.ng-valid {
+    z-index: -1;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.searchbar_cointainer form.search_input.ng-untouched.ng-pristine.ng-valid input {
+    border-radius: 18px;
+    height: 33px;
+}
+
+.searchbar_cointainer form.search_input.ng-untouched.ng-pristine.ng-valid button {
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    right: 41px;
+}
+
+.mat-mdc-card-content:last-child {
+    height: fit-content;
+    width: 100%;
+    background: linear-gradient(324deg, #41d3e5 0%, #96e6a1 100%);
+    border-radius: 2px;
+}
+
+.mat-mdc-card::after {
+    content: " ";
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    background: cornflowerblue;
+    width: 100%;
+    border-radius: 70%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: 250ms transform ease-in;
+}
+
+.mat-mdc-card:hover::after {
+    transform-origin: left;
+    transform: scaleX(0.97);
+}
+
+.mat-mdc-card:hover {
+    box-shadow: 2px -1px 12px 2px #53d7d6;
+}
+
+.pagination_css {
+    display: flex;
+    gap: 20px;
+    height: fit-content !important;
+    width: fit-content;
+    position: relative;
+    left: 44%;
+    cursor: pointer;
+}
+
+.pagination_css button {
+    display: contents;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.pagination_css div {
+    position: relative;
+    right: -10px;
+    
+}
