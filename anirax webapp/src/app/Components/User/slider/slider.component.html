@@ -1,0 +1,110 @@
+
+<swiper style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" [thumbs]="{ swiper: thumbsSwiper }"
+class="mySwiper2" [autoplay]="{
+delay: 1000
+}" [speed]="2000" [loop]="true"
+[effect]="'coverflow'"
+[lazy]="true"
+>
+<ng-container *ngFor="let slide of animedata">
+  <ng-template *ngIf="slide.data.animeImg" class="synopsis" swiperSlide>
+    <div class="container_for_Anime_data">
+      <div class="Padding_fixer">
+        <div class="Anime_Name">
+          <div class="Anime_heading">
+            <div class="Name">
+              <h4>Anime:</h4>
+            </div>
+            <div class="text_contianer">
+              <p>&nbsp;{{slide.data.animeTitle}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="Anime_Synopsis">
+          <div class="Anime_heading">
+            <div class="Name">
+              <h4>Synopsis:</h4>
+            </div>
+            <div class="text_contianer_synopsis">
+              <p>&nbsp;{{slide.data.synopsis}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="Anime_genre">
+          <div class="Anime_heading">
+            <div class="Name">
+              <h4>Genre:</h4>
+            </div>
+            <div class="text_contianer">
+              <p>&nbsp;{{slide.data.genres}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="Anime_Episode">
+          <div class="Anime_heading">
+            <div class="Name">
+              <h4>Episode:</h4>
+            </div>
+            <div class="text_contianer">
+              <p>&nbsp;{{slide.data.totalEpisodes}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="Anime_Episode">
+          <div class="Anime_heading">
+            <div class="Name">
+              <h4>Type:</h4>
+            </div>
+            <div class="text_contianer">
+              <p>&nbsp;{{slide.data.type}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="Anime_otherNames">
+          <div class="Anime_heading">
+            <div class="Name">
+              <h4>Other Names:</h4>
+            </div>
+            <div class="text_contianer">
+              <p>&nbsp;{{slide.data.otherNames?slide.data.otherNames:"N/A"}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="Anime_release_date">
+          <div class="Anime_heading">
+            <div class="Name">
+              <h4>Release Date:</h4>
+            </div>
+            <div class="text_contianer">
+              <p>&nbsp;{{slide.data.releasedDate}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="Anime_status">
+          <div class="Anime_heading">
+            <div class="Name">
+              <h4>Status:</h4>
+            </div>
+            <div class="text_contianer">
+              <p>&nbsp;{{slide.data.status}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="Watch_Now">
+          <button mat-raised-button color="primary" (click)="watch(slide)">Watch now</button>
+        </div>
+      </div>
+    </div>
+    <img  [src]="slide.data.animeImg"/>
+  </ng-template>
+</ng-container>
+</swiper>
+<swiper (swiper)="thumbsSwiper= $event" [spaceBetween]="10" [slidesPerView]="4" [freeMode]="true"
+[watchSlidesProgress]="true" class="mySwiper" [loop]="true">
+<ng-container *ngFor="let slide of animedata">
+  <ng-template *ngIf="slide.data.animeImg" class="thumbs" swiperSlide>
+    <img  [src]="slide.data.animeImg"/>
+  </ng-template>
+</ng-container>
+</swiper>
+

@@ -1,0 +1,215 @@
+@import "~swiper/css";
+@import "~swiper/css/free-mode";
+@import "~swiper/css/navigation";
+@import "~swiper/css/thumbs";
+@import "~swiper/css/lazy";
+
+
+
+.mat-icon.mat-icon.notranslate.material-icons.mat-ligature-font.mat-icon-no-color {
+  margin-bottom: 5px;
+}
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.synopsis img {
+  position: absolute;
+  right: 0;
+  width: auto;
+}
+
+
+.synopsis {
+  background-image: linear-gradient(145deg, rgb(17, 15, 15) 50%, rgb(63, 81, 181) 50%, white);
+}
+
+.text_contianer_synopsis {
+  white-space: normal;
+  line-break: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.swiper.mySwiper.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-free-mode.swiper-watch-progress.swiper-thumbs {
+  background: #110f0f;
+}
+
+.container_for_Anime_data.ng-star-inserted {
+  display: flex;
+  justify-items: center;
+  position: absolute;
+  color: white;
+  height: 100%;
+  width: 50%;
+  margin-top: 11px;
+  font-family: "Calibri, sans-serif";
+  margin-right: 18%;
+  font-size: 16px;
+  flex-direction: column;
+  box-shadow: 3px 30px 21px 2px black;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.Anime_heading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+}
+
+.Padding_fixer {
+  padding: 7px 10px;
+  display: grid;
+  margin-top: inherit;
+  align-content: center;
+  align-items: center;
+  cursor: grab;
+  justify-items: start;
+  background-image: linear-gradient(145deg, rgb(17, 15, 15) 50%, rgb(63, 81, 181) 50%, white);
+  background-position: left;
+  background-size: 200%;
+  transition-property: background-size, background-position;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1s;
+}
+
+.Padding_fixer:active {
+  cursor: grabbing;
+}
+
+.Padding_fixer:focus,
+.Padding_fixer:hover {
+  background-size: 100%;
+}
+
+.Anime_Name, .Anime_Synopsis, .Anime_genre, .Anime_Episode, .Anime_otherNames, .Anime_release_date, .Anime_status {
+  padding-bottom: 10px;
+}
+
+.mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+  color: #3f51b5;
+}
+
+.mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab__text-label, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab__text-label {
+  color: white;
+}
+
+.cdk-overlay-pane .mdc-menu-surface {
+  max-height: 100vh;
+  background: rgb(2,0,36);
+  background: linear-gradient(310deg, rgba(2,0,36,0.6022118319984244) 0%, rgba(26,76,182,0.557393904827556) 26%, rgba(27,40,83,0.6330241569283963) 52%, rgba(66,137,193,0.7338644930628502) 73%, rgba(218,221,223,0.8010913838191527) 100%);
+  animation: menu 7s infinite alternate ease;
+  background-size: 2000%;
+}
+
+@keyframes menu {
+  0% {
+    background-position: right;
+  }
+
+  100% {
+    background-position: left;
+  }
+}
+
+.mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab__text-label, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab__text-label {
+  color: white;
+}
+
+div#cdk-overlay-0 {
+  position: relative !important;
+  left: 3%;
+}
+
+.mat-mdc-tab-body-content.ng-tns-c133-2.ng-trigger.ng-trigger-translateTab {
+  display: flex;
+}
+
+.mat-mdc-tab-body-content {
+  height: 100%;
+  display: flex;
+  overflow: auto !important;
+  gap: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.pagination span.ng-star-inserted {
+  cursor: pointer;
+  color: aquamarine;
+}
+.pagination .ngx-pagination a {
+  cursor: pointer;
+  color: aquamarine;
+}

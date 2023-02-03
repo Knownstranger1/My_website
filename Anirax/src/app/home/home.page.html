@@ -1,0 +1,40 @@
+
+
+
+
+<body>
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title color="primary">
+        Login/Register
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-card>
+      <div class="headers">
+        <div class="login">
+          <ion-card-header (click)="checker = false">Login</ion-card-header>
+        </div>
+        <div class="register">
+          <ion-card-header (click)="checker = true">Register</ion-card-header>
+        </div>
+      </div>
+  
+      <ion-card-content class="login_container">
+        <form [formGroup]="loginForm">
+          <ion-item>
+            <ion-label color="primary" position="floating">Email</ion-label>
+            <ion-input type="email" formControlName="email" placeholder="Enter your email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label color="primary" position="floating">Password</ion-label>
+            <ion-input maxlength="20" type="password" formControlName="password" placeholder="Enter your password"></ion-input>
+          </ion-item>
+          <ion-button color="primary" expand="full" fill="clear" (click)="login('Login')">Login</ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+</body>

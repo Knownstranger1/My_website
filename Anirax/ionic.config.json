@@ -1,0 +1,7 @@
+{
+  "name": "Anirax",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
