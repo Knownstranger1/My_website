@@ -24,3 +24,32 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.my-custom-toast {
+    position: relative;
+    top: 70px;
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.Success-toast {
+    position: relative;
+    top: 70px;
+    width: auto;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}

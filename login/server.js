@@ -1,11 +1,13 @@
 let express = require('express')
 require('dotenv').config()
+let morgan = require('morgan')
 const app = express()
 const port = process.env.port
 app.set('view engine','ejs')
 app.use(express.static('public'))
 app.use(express.urlencoded({extended:false}))
 app.use(express.json());
+app.use(morgan('dev'))
 const cors = require('cors')
 app.use(cors())
 app.listen(port,()=>{

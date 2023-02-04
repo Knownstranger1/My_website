@@ -12,17 +12,18 @@
   </ion-header>
   
   <ion-content>
-    <ion-card>
+   <div class="card-container">
+    <ion-card class="card_container">
       <div class="headers">
         <div class="login">
-          <ion-card-header (click)="checker = false">Login</ion-card-header>
+          <ion-card-header  (click)="login('Login')">Login</ion-card-header>
         </div>
         <div class="register">
-          <ion-card-header (click)="checker = true">Register</ion-card-header>
+          <ion-card-header  (click)="login('Register')">Register</ion-card-header>
         </div>
       </div>
   
-      <ion-card-content class="login_container">
+      <ion-card-content class="login_container" *ngIf="checker== false">
         <form [formGroup]="loginForm">
           <ion-item>
             <ion-label color="primary" position="floating">Email</ion-label>
@@ -32,9 +33,27 @@
             <ion-label color="primary" position="floating">Password</ion-label>
             <ion-input maxlength="20" type="password" formControlName="password" placeholder="Enter your password"></ion-input>
           </ion-item>
-          <ion-button color="primary" expand="full" fill="clear" (click)="login('Login')">Login</ion-button>
+          <ion-button color="primary" expand="full" fill="clear" [disabled]="loginForm.invalid" (click)="submit(loginForm,'Login')">Login</ion-button>
+        </form>
+      </ion-card-content>
+      <ion-card-content class="login_container" *ngIf="checker ==true">
+        <form [formGroup]="registerForm">
+          <ion-item>
+            <ion-label color="primary" position="floating">Email</ion-label>
+            <ion-input type="email" formControlName="email" placeholder="Enter your email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label color="primary" position="floating">Name</ion-label>
+            <ion-input maxlength="20" type="text" formControlName="name" placeholder="Enter your Name"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label color="primary" position="floating">Password</ion-label>
+            <ion-input maxlength="20" type="password" formControlName="password" placeholder="Enter your password"></ion-input>
+          </ion-item>
+          <ion-button color="primary" expand="full" fill="clear" [disabled]="loginForm.invalid" (click)="submit(registerForm,'Register')">Register</ion-button>
         </form>
       </ion-card-content>
     </ion-card>
+   </div>
   </ion-content>
 </body>
